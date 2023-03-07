@@ -2,45 +2,41 @@ package ss1_introduction_java.exercise2;
 
 import java.util.Scanner;
 
+
 public class NumToString {
+
+
+    final static String ones[] = {" ", " ONE", " TWO", " THREE", " FOUR", " FIVE", " SIX", " SEVEN", " EIGHT", " NINE", " TEN", " ELEVEN", " TWELVE", " THIRTEEN", " FOURTEEN", " FIFTEEN", " SIXTEEN", " SEVENTEEN", " EIGHTEEN", " NINETEEN"};
+    final static String twos[] = {" ", " ", " TWENTY", " THIRTY", " FORTY", " FIFTY", " SIXTY", " SEVENTY", " EIGHTY", " NINETY"};
+
+    public static void numberToWord(int num, String value) {
+
+
+        if (num > 19) {
+            System.out.println(twos[num / 10] + ones[num % 10]);
+        } else
+            System.out.println(ones[num]);
+
+        if (num > 0) {
+            System.out.println(value);
+        }
+    }
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("nhập vào số nguyên : ");
-        String number = sc.nextLine();
-        switch (number) {
-            case "1":
-                System.out.println("one");
-                break;
-            case "2":
-                System.out.println("two");
-                break;
-            case "3":
-                System.out.println("three");
-                break;
-            case "4":
-                System.out.println("four");
-                break;
-            case "5":
-                System.out.println("five");
-                break;
-            case "6":
-                System.out.println("six");
-                break;
-            case "7":
-                System.out.println("seven");
-                break;
-            case "8":
-                System.out.println("eight");
-                break;
-            case "9":
-                System.out.println("nine");
-                break;
-            case "10":
-                System.out.println("ten");
-                break;
-            case "11":
-                System.out.println("eleven");
-                break;
+        System.out.println("Input a number:");
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+
+
+        if (num <= 19) {
+            System.out.println(ones[num]);
+        } else if (num > 19 && num < 100) {
+            System.out.println(twos[num / 10] + ones[num % 10]);
+        } else if (num >= 100 && num % 100 == 0) {
+            System.out.println(ones[(num / 100) % 10] + " HUNDRED");
+        } else if (num > 100) {
+            System.out.print(ones[(num / 100) % 10] + " HUNDRED AND");
+            numberToWord(num % 100, " ");
         }
     }
 }

@@ -1,6 +1,5 @@
-package ss1_introduction_java.exercise1;
+package ss1_introduction_java.exercise_1;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Hello {

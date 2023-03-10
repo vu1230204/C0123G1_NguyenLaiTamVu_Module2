@@ -29,7 +29,6 @@ public class DiagonalLine {
                 if (i == j) {
                     sum += array[i][j];
                 }
-
             }
         }
         return sum;

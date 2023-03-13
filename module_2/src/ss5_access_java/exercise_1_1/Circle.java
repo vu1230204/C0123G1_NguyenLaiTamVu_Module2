@@ -20,5 +20,16 @@ public class Circle {
         return Math.PI * Math.pow(this.radius, 2);
     }
 
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
 

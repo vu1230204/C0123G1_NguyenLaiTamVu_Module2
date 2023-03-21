@@ -1,4 +1,4 @@
-package ss13_search;
+package ss13_search.exercise_1_1;
 
 import java.util.LinkedList;
 import java.util.Scanner;

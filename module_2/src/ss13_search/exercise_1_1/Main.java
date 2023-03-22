@@ -23,8 +23,7 @@ public class Main {
             }
 
         }
-        for (Character temp : max
-        ) {
+        for (Character temp : max) {
             System.out.print(temp);
         }
 

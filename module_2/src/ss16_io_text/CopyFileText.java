@@ -10,7 +10,7 @@ public class CopyFileText {
         BufferedWriter writer = null;
         String str;
         try {
-            fileReader = new FileReader("src/ss16_io_text/source.txt");
+            fileReader = new FileReader("src/ss16_io_text/source.txt.txt");
             fileWriter = new FileWriter("src/ss16_io_text/target.txt", true);
             reader = new BufferedReader(fileReader);
             writer = new BufferedWriter(fileWriter);

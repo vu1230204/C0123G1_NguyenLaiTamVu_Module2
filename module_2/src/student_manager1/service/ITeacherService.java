@@ -1,2 +1,5 @@
-package student_manager1.service;public interface ITeacherService {
+package student_manager1.service;
+
+public interface ITeacherService {
+    void disPlay();
 }

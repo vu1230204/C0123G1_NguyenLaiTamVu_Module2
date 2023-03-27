@@ -1,2 +1,8 @@
-package student_manager1.service;public interface IStudentService {
+package student_manager1.service;
+
+public interface IStudentService {
+
+    void input();
+
+    void disPlay();
 }

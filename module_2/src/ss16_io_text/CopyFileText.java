@@ -10,8 +10,8 @@ public class CopyFileText {
         BufferedWriter writer = null;
         String str;
         try {
-            fileReader = new FileReader("src/ss16_io_text/source.csv");
-            fileWriter = new FileWriter("src/ss16_io_text/target.csv", true);
+            fileReader = new FileReader("src/ss16_io_text/source.txt");
+            fileWriter = new FileWriter("src/ss16_io_text/target.txt", true);
             reader = new BufferedReader(fileReader);
             writer = new BufferedWriter(fileWriter);
             String line;

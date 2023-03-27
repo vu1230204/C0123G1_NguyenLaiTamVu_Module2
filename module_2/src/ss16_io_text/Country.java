@@ -1,14 +1,14 @@
 package ss16_io_text;
 
-public class ListCountry {
+public class Country {
     public String id;
 
     public String name;
 
-    public ListCountry() {
+    public Country() {
     }
 
-    public ListCountry(String id, String name) {
+    public Country(String id, String name) {
         this.id = id;
         this.name = name;
     }

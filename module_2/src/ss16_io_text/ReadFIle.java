@@ -10,7 +10,7 @@ public class ReadFIle {
         FileReader fileReader = null;
         try {
             String line = "";
-            fileReader = new FileReader("src/ss16_io_text/name.csv");
+            fileReader = new FileReader("src/ss16_io_text/name.txt");
             bufferedReader = new BufferedReader(fileReader);
             while ((line = bufferedReader.readLine()) != null) {
                 System.out.println(line);

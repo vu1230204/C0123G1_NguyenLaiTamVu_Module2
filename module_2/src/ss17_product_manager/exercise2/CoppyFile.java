@@ -11,7 +11,7 @@ public class CoppyFile {
         int number1;
         try {
             fileInputStream = new FileInputStream("src/ss17_product_manager/exercise2/source.txt");
-            fileOutputStream = new FileOutputStream("src/ss17_product_manager/exercise2/target.txt", true);
+            fileOutputStream = new FileOutputStream("src/ss17_product_manager/exercise2/target.txt  ", true);
             bufferedInputStream = new BufferedInputStream(fileInputStream);
             bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
             byte[] buffer = new byte[1024];

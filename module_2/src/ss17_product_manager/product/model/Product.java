@@ -73,4 +73,13 @@ public class Product implements Serialization {
                 '}';
     }
 
+    @Override
+    public Class<? extends Annotation> annotationType() {
+        return null;
+    }
+
+    @Override
+    public String encoding() {
+        return null;
+    }
 }

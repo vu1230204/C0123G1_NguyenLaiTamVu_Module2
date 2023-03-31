@@ -12,7 +12,7 @@ public class ValidateNameForClassName {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("nhap ten lop");
+        System.out.println("Nhập tên lớp");
         String classesName = sc.nextLine();
         System.out.println(validateClassName(classesName));
     }

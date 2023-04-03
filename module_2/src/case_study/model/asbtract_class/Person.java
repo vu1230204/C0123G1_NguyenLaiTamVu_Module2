@@ -1,23 +1,23 @@
-package case_study.model.asbtractClass;
+package case_study.model.asbtract_class;
 
 public class Person {
     private int id;
     private String name;
     private String dateOfBirthday;
     private String gender;
-    private int cmnd;
+    private int identityCard;
     private String phoneNumber;
     private String email;
 
     public Person() {
     }
 
-    public Person(int id, String name, String dateOfBirthday, String gender, int cmnd, String phoneNumber, String email) {
+    public Person(int id, String name, String dateOfBirthday, String gender, int identityCard, String phoneNumber, String email) {
         this.id = id;
         this.name = name;
         this.dateOfBirthday = dateOfBirthday;
         this.gender = gender;
-        this.cmnd = this.cmnd;
+        this.identityCard = identityCard;
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
@@ -54,12 +54,12 @@ public class Person {
         this.gender = gender;
     }
 
-    public int getCmnd() {
-        return cmnd;
+    public int getIdentityCard() {
+        return identityCard;
     }
 
-    public void setCmnd(int cmnd) {
-        this.cmnd = cmnd;
+    public void setIdentityCard(int identityCard) {
+        this.identityCard = identityCard;
     }
 
     public String getPhoneNumber() {
@@ -85,7 +85,7 @@ public class Person {
                 ", name='" + name + '\'' +
                 ", dateOfBirthday='" + dateOfBirthday + '\'' +
                 ", gender='" + gender + '\'' +
-                ", CMND=" + cmnd +
+                ", CMND=" + identityCard +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
                 '}';

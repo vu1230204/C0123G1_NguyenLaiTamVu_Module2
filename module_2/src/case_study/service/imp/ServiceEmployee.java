@@ -69,7 +69,7 @@ public class ServiceEmployee implements IServiceEmployee {
                 System.out.println("sua ten cua ban");
                 name = sc.nextLine();
                 String dateOfBirthday;
-                System.out.println("sua ngay sinh nhat");
+                System.out.println("sua ngay sinh ");
                 dateOfBirthday = sc.nextLine();
                 String gender;
                 System.out.println("sua gioi tinh");

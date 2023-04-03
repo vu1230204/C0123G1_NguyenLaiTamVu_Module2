@@ -1,8 +1,8 @@
 package case_study.model;
 
-import case_study.model.asbtractClass.Facility;
+import case_study.model.asbtract_class.AsbtractFacility;
 
-public class Villa extends Facility {
+public class Villa extends AsbtractFacility {
     private String standardRoom;
     private int pool;
     private int floor;
@@ -54,5 +54,9 @@ public class Villa extends Facility {
                 ", pool=" + pool +
                 ", floor=" + floor +
                 '}';
+    }
+
+    public int toWriteCSV() {
+        return 0;
     }
 }

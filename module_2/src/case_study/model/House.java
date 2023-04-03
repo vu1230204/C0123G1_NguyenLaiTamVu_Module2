@@ -1,8 +1,8 @@
 package case_study.model;
 
-import case_study.model.asbtractClass.Facility;
+import case_study.model.asbtract_class.AsbtractFacility;
 
-public class House extends Facility {
+public class House extends AsbtractFacility {
     private String standardRoom;
     private int floor;
 
@@ -14,8 +14,8 @@ public class House extends Facility {
         this.floor = floor;
     }
 
-    public House(String id, String serviceName, int areaUse, float price, int peppleMax, String date, String standardRoom, int floor) {
-        super(id, serviceName, areaUse, price, peppleMax, date);
+    public House(String id, String serviceName, int areaUse, float price, int peopleMax, String date, String standardRoom, int floor) {
+        super(id, serviceName, areaUse, price, peopleMax, date);
         this.standardRoom = standardRoom;
         this.floor = floor;
     }
@@ -38,9 +38,13 @@ public class House extends Facility {
 
     @Override
     public String toString() {
-        return "House{" +
+        return "House{" + super.toString() +
                 "standardRoom='" + standardRoom + '\'' +
                 ", floor=" + floor +
                 '}';
+    }
+
+    public int toWriteCSV() {
+        return 0;
     }
 }

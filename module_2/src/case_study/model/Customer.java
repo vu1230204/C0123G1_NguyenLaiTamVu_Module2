@@ -1,13 +1,11 @@
 package case_study.model;
 
-import case_study.model.asbtractClass.Person;
+import case_study.model.asbtract_class.Person;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Customer extends Person {
-    final String a = "Dianmond";
-    final String b = "Platinum";
-    final String c = "Gold";
-    final String d = "Silver";
-    final String e = "Member";
     private String kindOfCustomer;
     private String address;
 
@@ -25,25 +23,6 @@ public class Customer extends Person {
         this.address = address;
     }
 
-    public String getA() {
-        return a;
-    }
-
-    public String getB() {
-        return b;
-    }
-
-    public String getC() {
-        return c;
-    }
-
-    public String getD() {
-        return d;
-    }
-
-    public String getE() {
-        return e;
-    }
 
     public String getKindOfCustomer() {
         return kindOfCustomer;
@@ -69,4 +48,7 @@ public class Customer extends Person {
                 '}';
     }
 
+    public int toWriteCSV() {
+        return 0;
+    }
 }

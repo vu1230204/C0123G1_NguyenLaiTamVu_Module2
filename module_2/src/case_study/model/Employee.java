@@ -1,6 +1,6 @@
 package case_study.model;
 
-import case_study.model.asbtractClass.Person;
+import case_study.model.asbtract_class.Person;
 
 public class Employee extends Person {
     private String a = "Trung Cap";
@@ -80,5 +80,9 @@ public class Employee extends Person {
                 ", level='" + level + '\'' +
                 ", salary=" + salary +
                 '}';
+    }
+
+    public int toWriteCSV() {
+        return 0;
     }
 }

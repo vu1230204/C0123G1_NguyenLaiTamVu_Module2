@@ -1,22 +1,22 @@
-package case_study.model.asbtractClass;
+package case_study.model.asbtract_class;
 
-public class Facility {
+public class AsbtractFacility {
     private String id;
     private String serviceName;
-    private int areaUse;
+    private float areaUse;
     private float price;
-    private int peppleMax;
+    private int peopleMax;
     private String date;
 
-    public Facility() {
+    public AsbtractFacility() {
     }
 
-    public Facility(String id, String serviceName, int areaUse, float price, int peppleMax, String date) {
+    public AsbtractFacility(String id, String serviceName, int areaUse, float price, int peopleMax, String date) {
         this.id = id;
         this.serviceName = serviceName;
         this.areaUse = areaUse;
         this.price = price;
-        this.peppleMax = peppleMax;
+        this.peopleMax = peopleMax;
         this.date = date;
     }
 
@@ -36,11 +36,11 @@ public class Facility {
         this.serviceName = serviceName;
     }
 
-    public int getAreaUse() {
+    public float getAreaUse() {
         return areaUse;
     }
 
-    public void setAreaUse(int areaUse) {
+    public void setAreaUse(float areaUse) {
         this.areaUse = areaUse;
     }
 
@@ -52,12 +52,12 @@ public class Facility {
         this.price = price;
     }
 
-    public int getPeppleMax() {
-        return peppleMax;
+    public int getPeopleMax() {
+        return peopleMax;
     }
 
-    public void setPeppleMax(int peppleMax) {
-        this.peppleMax = peppleMax;
+    public void setPeopleMax(int peopleMax) {
+        this.peopleMax = peopleMax;
     }
 
     public String getDate() {
@@ -75,7 +75,7 @@ public class Facility {
                 ", serviceName='" + serviceName + '\'' +
                 ", areaUse=" + areaUse +
                 ", price=" + price +
-                ", peppleMax=" + peppleMax +
+                ", peppleMax=" + peopleMax +
                 ", date='" + date + '\'' +
                 '}';
     }

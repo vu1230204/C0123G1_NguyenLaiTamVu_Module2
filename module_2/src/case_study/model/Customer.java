@@ -17,12 +17,11 @@ public class Customer extends Person {
         this.address = address;
     }
 
-    public Customer(int id, String name, String dateOfBirthday, String gender, int CMND, String phoneNumber, String email, String kindOfCustomer, String address) {
-        super(id, name, dateOfBirthday, gender, CMND, phoneNumber, email);
+    public Customer(int id, String name, String dateOfBirthday, String gender, int identityCard, String phoneNumber, String email, String kindOfCustomer, String address) {
+        super(id, name, dateOfBirthday, gender, identityCard, phoneNumber, email);
         this.kindOfCustomer = kindOfCustomer;
         this.address = address;
     }
-
 
     public String getKindOfCustomer() {
         return kindOfCustomer;
@@ -47,8 +46,9 @@ public class Customer extends Person {
                 ", address='" + address + '\'' +
                 '}';
     }
-
-    public int toWriteCSV() {
-        return 0;
+//    Customer(int id, String name, String dateOfBirthday, String gender,
+//             int CMND, String phoneNumber, String email, String kindOfCustomer, String address)
+    public String toWriteCSV() {
+        return super.toCSV()+","+getPhoneNumber()+","+getAddress();
     }
 }

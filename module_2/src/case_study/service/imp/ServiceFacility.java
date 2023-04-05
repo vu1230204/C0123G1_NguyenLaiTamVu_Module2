@@ -57,7 +57,7 @@ public class ServiceFacility implements IServiceFacility {
             System.out.println("1. Add new Villa");
             System.out.println("2. Add new Room");
             System.out.println("3. Add new House");
-            System.out.println("4. Add new Villa");
+            System.out.println("4. Return to main menu");
             choose = sc.nextLine();
             switch (choose) {
                 case "1":

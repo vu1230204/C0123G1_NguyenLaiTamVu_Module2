@@ -27,9 +27,9 @@ public class ReadCustomer {
             }
 
         } catch (FileNotFoundException e) {
-            System.out.println("bi loi");
+            throw new RuntimeException(e);
         } catch (IOException e) {
-            WriteCustomer.writeCustomer(path, customerList);
+           WriteCustomer.writeCustomer(path,customerList);
         } finally {
 
             try {

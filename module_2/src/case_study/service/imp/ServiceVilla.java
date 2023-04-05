@@ -11,15 +11,16 @@ import java.util.Scanner;
 
 public class ServiceVilla {
     public static void addVilla() {
-        LinkedHashMap<Villa, Integer> villaIntegerLinkedHashMap = ReadVilla.readVilla("src/case_study/data/dataVilla.csv");
         Scanner sc = new Scanner(System.in);
-        String id = null;
+        LinkedHashMap<Villa, Integer> villaIntegerLinkedHashMap = ReadVilla.readVilla("src/case_study/data/dataVilla.csv");
+        String id;
         do {
             System.out.println("Nhập id");
             id = sc.nextLine();
-            if (FormatIdFacility.regexHouse(id)) {
+            if (FormatIdFacility.regexVilla(id)) {
                 break;
             }
+            System.out.println("Yêu cầu nhập đúng format");
         } while (true);
         String name;
         do {
@@ -28,6 +29,7 @@ public class ServiceVilla {
             if (FormatNameFacility.formatNameFacilityVilla(name)) {
                 break;
             }
+            System.out.println("yêu cầu nhập đúng ");
         } while (true);
         int areaUse;
         do {
@@ -64,7 +66,7 @@ public class ServiceVilla {
 
         Villa villa = new Villa(id, name, areaUse, price, peopleMax, date, standardRoom, pool, floor);
         villaIntegerLinkedHashMap.put(villa, 0);
-        WriteVilla.writeVilla("src/case_study/data/dataHouse.csv", villaIntegerLinkedHashMap);
+        WriteVilla.writeVilla("src/case_study/data/dataVilla.csv", villaIntegerLinkedHashMap);
 
     }
 

@@ -13,13 +13,14 @@ import java.util.Scanner;
 
 public class ServiceRoom {
     public static void addRoom() {
-        LinkedHashMap<Room, Integer> roomIntegerLinkedHashMap = ReadRoom.readRoom("src/case_study/data/dataRoom.csv");
         Scanner sc = new Scanner(System.in);
+        LinkedHashMap<Room, Integer> roomIntegerLinkedHashMap = ReadRoom.readRoom("src/case_study/data/dataRoom.csv");
+
         String id = null;
         do {
             System.out.println("Nhập id");
             id = sc.nextLine();
-            if (FormatIdFacility.regexHouse(id)) {
+            if (FormatIdFacility.regexRoom(id)) {
                 break;
             }
         } while (true);
@@ -55,7 +56,7 @@ public class ServiceRoom {
 
         Room room = new Room(id, name, areaUse, price, peopleMax, date, serviceFree);
         roomIntegerLinkedHashMap.put(room, 0);
-        WriteRoom.writeRoom("src/case_study/data/dataHouse.csv", roomIntegerLinkedHashMap);
+        WriteRoom.writeRoom("src/case_study/data/dataRoom.csv", roomIntegerLinkedHashMap);
 
     }
 }

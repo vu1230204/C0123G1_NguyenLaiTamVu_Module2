@@ -90,4 +90,11 @@ public class Person {
                 ", email='" + email + '\'' +
                 '}';
     }
+//    Person(int id, String name, String dateOfBirthday,
+//    String gender, int identityCard, String phoneNumber, String email)
+
+    public  String toCSV(){
+        return getId()+","+getName()+","+getDateOfBirthday()+","+getGender()+","+getIdentityCard()+","+getPhoneNumber()
+                +","+getEmail();
+    }
 }

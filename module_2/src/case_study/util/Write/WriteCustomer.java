@@ -15,7 +15,6 @@ public class WriteCustomer {
             fileWriter = new FileWriter(path);
             bufferedWriter = new BufferedWriter(fileWriter);
             for (Customer temp : customerList) {
-//                System.out.println(temp.toWriteCSV());
                 bufferedWriter.write(temp.toWriteCSV());
                 bufferedWriter.newLine();
             }

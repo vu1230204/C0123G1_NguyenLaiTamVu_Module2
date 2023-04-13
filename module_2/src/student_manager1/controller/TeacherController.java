@@ -23,7 +23,12 @@ public class TeacherController {
                     iTeacherService.disPlay();
                     break;
                 case "2":
+                    iTeacherService.input();
                     break;
+                case "3":
+                    iTeacherService.delete();
+                    break;
+
             }
         }while (!choice.equals("4"));
     }

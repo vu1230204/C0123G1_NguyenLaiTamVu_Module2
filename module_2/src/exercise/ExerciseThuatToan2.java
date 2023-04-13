@@ -2,7 +2,7 @@ package exercise;
 
 import java.util.Scanner;
 
-public class Exercise_thuatoan {
+public class ExerciseThuatToan2 {
     public static void main(String[] args) {
         int count = 0;
         int number;

@@ -44,7 +44,7 @@ public class House extends AsbtractFacility {
                 '}';
     }
 
-    public int toWriteCSV() {
-        return 0;
+    public String toWriteCSV() {
+        return super.toWriteCSV()+","+getStandardRoom()+","+getFloor();
     }
 }

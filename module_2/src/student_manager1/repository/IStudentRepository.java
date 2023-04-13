@@ -11,4 +11,6 @@ public interface IStudentRepository {
      List<Student> getAll();
 
     void inputStudent(Student student);
+
+    void delete(int id);
 }

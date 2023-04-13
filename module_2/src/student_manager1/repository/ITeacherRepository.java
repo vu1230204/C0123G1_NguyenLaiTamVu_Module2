@@ -6,4 +6,8 @@ import java.util.List;
 
 public interface ITeacherRepository {
     List<Teacher> getAll();
+
+    void input(Teacher teacher);
+
+    void delete(int id);
 }

@@ -16,7 +16,7 @@ public class ServiceVilla {
         String id;
         do {
             System.out.println("Nhập id");
-            id = sc.nextLine();
+            id = sc.next();
             if (FormatIdFacility.regexVilla(id)) {
                 break;
             }

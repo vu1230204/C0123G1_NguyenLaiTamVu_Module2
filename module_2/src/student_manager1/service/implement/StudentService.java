@@ -10,10 +10,10 @@ import java.util.Scanner;
 
 public class StudentService implements IStudentService {
     IStudentRepository iStudentRepository = new StudentRepository();
+    Scanner sc = new Scanner(System.in);
 
     @Override
     public void input() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Nhập id");
         int id = Integer.parseInt(sc.nextLine());
         System.out.println("Nhập name");
@@ -33,5 +33,18 @@ public class StudentService implements IStudentService {
     @Override
     public void disPlay() {
         List<Student> studentList = iStudentRepository.getAll();
+        for (Student s : studentList
+        ) {
+            System.out.println(s);
+        }
+    }
+
+    @Override
+    public void delete() {
+        System.out.println("nhap id can xoa");
+        int id;
+        id = Integer.parseInt(sc.nextLine());
+        iStudentRepository.delete(id);
+        System.out.println("Da Xoa");
     }
 }

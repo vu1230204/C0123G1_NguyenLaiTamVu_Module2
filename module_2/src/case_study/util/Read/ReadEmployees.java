@@ -23,7 +23,7 @@ public class ReadEmployees {
             bufferedReader = new BufferedReader(fileReader);
             while ((temp = bufferedReader.readLine()) != null) {
                 arrayTemp = temp.split(",");
-                employee = new Employee(Integer.parseInt(arrayTemp[0]), arrayTemp[1], arrayTemp[2], arrayTemp[3], Integer.parseInt(arrayTemp[4]), arrayTemp[5], arrayTemp[6], arrayTemp[7], Float.parseFloat(arrayTemp[8]));
+                employee = new Employee(Integer.parseInt(arrayTemp[0]), arrayTemp[1], arrayTemp[2], arrayTemp[3], Integer.parseInt(arrayTemp[4]), arrayTemp[5], arrayTemp[6], arrayTemp[7], arrayTemp[8], Float.parseFloat(arrayTemp[9]));
                 employeeList.add(employee);
             }
             bufferedReader.close();

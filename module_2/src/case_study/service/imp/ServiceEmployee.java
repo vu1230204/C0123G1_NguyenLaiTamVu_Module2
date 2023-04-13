@@ -51,10 +51,13 @@ public class ServiceEmployee implements IServiceEmployee {
         System.out.println("Nhap level");
         String level;
         level = sc.nextLine();
+        String option;
+        System.out.println("option");
+        option = sc.nextLine();
         System.out.println("Nhap luong");
         int salary;
         salary = Integer.parseInt(sc.nextLine());
-        Employee employee = new Employee(id, name, dateOfBirthday, gender, cmnd, phoneNumber, email, level, salary);
+        Employee employee = new Employee(id, name, dateOfBirthday, gender, cmnd, phoneNumber, email, level, option, salary);
         employeeList.add(employee);
     }
 
@@ -86,10 +89,13 @@ public class ServiceEmployee implements IServiceEmployee {
                 String level;
                 System.out.println("sua bang cap");
                 level = sc.nextLine();
+                String option;
+                System.out.println("option");
+                option = sc.nextLine();
                 int salary;
                 System.out.println("sua luong");
                 salary = Integer.parseInt(sc.nextLine());
-                employee = new Employee(id, name, dateOfBirthday, gender, cmnd, phoneNumber, email, level, salary);
+                employee = new Employee(id, name, dateOfBirthday, gender, cmnd, phoneNumber, email, level, option, salary);
                 employeeList.set(i, employee);
             }
 

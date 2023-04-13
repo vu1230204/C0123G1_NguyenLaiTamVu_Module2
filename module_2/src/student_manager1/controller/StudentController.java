@@ -23,6 +23,9 @@ public class StudentController {
                 case "2":
                     iStudentService.input();
                     break;
+                case "3":
+                    iStudentService.delete();
+                    break;
             }
         } while (!choose.equals("4"));
     }

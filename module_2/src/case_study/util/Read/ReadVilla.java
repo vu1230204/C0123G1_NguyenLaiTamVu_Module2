@@ -22,7 +22,7 @@ public class ReadVilla {
             Villa villa;
             while ((temp = bufferedReader.readLine()) != null) {
                 tempArray = temp.split(",");
-                villa = new Villa(tempArray[0], tempArray[1], Integer.parseInt(tempArray[2]), Integer.parseInt(tempArray[3]), Integer.parseInt(tempArray[4]), tempArray[5], tempArray[6], Integer.parseInt(tempArray[7]), Integer.parseInt(tempArray[8]));
+                villa = new Villa(tempArray[0], tempArray[1], Integer.parseInt(tempArray[2]), Float.parseFloat(tempArray[3]), Integer.parseInt(tempArray[4]), tempArray[5], tempArray[6], Integer.parseInt(tempArray[7]), Integer.parseInt(tempArray[8]));
                 int value = Integer.parseInt(tempArray[9]);
                 villaList.put(villa, value);
             }

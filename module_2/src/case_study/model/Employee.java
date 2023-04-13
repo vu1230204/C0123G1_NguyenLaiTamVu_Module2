@@ -8,20 +8,31 @@ public class Employee extends Person {
     private String c = "Dai Hoc";
     private String d = "Sau Dai Hoc";
     private String level;
+    private String option;
     private float salary;
 
     public Employee() {
     }
 
-    public Employee(String level, float salary) {
+    public Employee(String level, String option, float salary) {
         this.level = level;
+        this.option = option;
         this.salary = salary;
     }
 
-    public Employee(int id, String name, String dateOfBirthday, String gender, int cmnd, String phoneNumber, String email, String level, float salary) {
-        super(id, name, dateOfBirthday, gender, cmnd, phoneNumber, email);
+    public Employee(int id, String name, String dateOfBirthday, String gender, int identityCard, String phoneNumber, String email, String level, String option, float salary) {
+        super(id, name, dateOfBirthday, gender, identityCard, phoneNumber, email);
         this.level = level;
+        this.option = option;
         this.salary = salary;
+    }
+
+    public String getOption() {
+        return option;
+    }
+
+    public void setOption(String option) {
+        this.option = option;
     }
 
     public String getA() {
@@ -82,7 +93,7 @@ public class Employee extends Person {
                 '}';
     }
 
-    public int toWriteCSV() {
-        return 0;
+    public String toWriteCSV() {
+        return super.toWriteCSV() + "," + getLevel() + "," + getOption() + "," + getSalary();
     }
 }

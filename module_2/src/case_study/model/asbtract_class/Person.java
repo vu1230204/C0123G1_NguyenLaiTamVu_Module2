@@ -97,4 +97,8 @@ public class Person {
         return getId()+","+getName()+","+getDateOfBirthday()+","+getGender()+","+getIdentityCard()+","+getPhoneNumber()
                 +","+getEmail();
     }
+
+    protected String toWriteCSV() {
+        return getId() + "," + getName() + "," + getDateOfBirthday() + "," + getGender() + "," + getIdentityCard() + "," + getPhoneNumber() + "," + getEmail();
+    }
 }

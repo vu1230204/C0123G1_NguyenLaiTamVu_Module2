@@ -80,4 +80,7 @@ public class AsbtractFacility {
                 '}';
     }
 
+    protected String toWriteCSV() {
+        return getId()+","+getServiceName()+","+getAreaUse()+","+getPrice() +","+getPeopleMax()+","+getDate()+",";
+    }
 }

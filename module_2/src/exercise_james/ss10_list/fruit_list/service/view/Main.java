@@ -1,7 +1,7 @@
-package student_manager1.view;
+package exercise_james.ss10_list.fruit_list.service.view;
 
-import student_manager1.controller.StudentController;
-import student_manager1.controller.TeacherController;
+import exercise_james.ss10_list.student_manager1.controller.StudentController;
+import exercise_james.ss10_list.student_manager1.controller.TeacherController;
 
 import java.util.Scanner;
 

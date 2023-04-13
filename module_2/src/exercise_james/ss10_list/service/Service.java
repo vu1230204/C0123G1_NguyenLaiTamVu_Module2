@@ -1,10 +1,9 @@
 package exercise_james.ss10_list.service;
 
-import exercise_james.ss10_list.Fruit;
+import exercise_james.ss10_list.fruit_list.service.Fruit;
 import exercise_james.ss10_list.repository.IRepository;
 import exercise_james.ss10_list.repository.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 

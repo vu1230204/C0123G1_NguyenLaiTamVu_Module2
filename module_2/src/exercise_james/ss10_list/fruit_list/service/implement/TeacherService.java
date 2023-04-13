@@ -1,11 +1,10 @@
-package student_manager1.service.implement;
+package exercise_james.ss10_list.fruit_list.service.implement;
 
 
-import student_manager1.model.Teacher;
-import student_manager1.repository.implement.TeacherRepository;
-import student_manager1.service.ITeacherService;
+import exercise_james.ss10_list.student_manager1.model.Teacher;
+import exercise_james.ss10_list.student_manager1.repository.implement.TeacherRepository;
+import exercise_james.ss10_list.fruit_list.service.ITeacherService;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 

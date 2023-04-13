@@ -1,4 +1,4 @@
-package student_manager1.model;
+package exercise_james.ss10_list.student_manager1.model;
 
 public class Person {
     private int id;

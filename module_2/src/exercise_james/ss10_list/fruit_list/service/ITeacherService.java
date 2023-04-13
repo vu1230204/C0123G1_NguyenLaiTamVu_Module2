@@ -1,4 +1,4 @@
-package student_manager1.service;
+package exercise_james.ss10_list.fruit_list.service;
 
 public interface ITeacherService {
     void disPlay();

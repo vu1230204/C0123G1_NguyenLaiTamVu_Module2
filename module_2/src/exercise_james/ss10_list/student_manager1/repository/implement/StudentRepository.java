@@ -1,8 +1,8 @@
-package student_manager1.repository.implement;
+package exercise_james.ss10_list.student_manager1.repository.implement;
 
 
-import student_manager1.model.Student;
-import student_manager1.repository.IStudentRepository;
+import exercise_james.ss10_list.student_manager1.model.Student;
+import exercise_james.ss10_list.student_manager1.repository.IStudentRepository;
 
 import java.util.ArrayList;
 import java.util.List;

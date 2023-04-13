@@ -1,4 +1,4 @@
-package exercise_james.ss10_list;
+package exercise_james.ss10_list.fruit_list.service;
 
 import java.util.ArrayList;
 

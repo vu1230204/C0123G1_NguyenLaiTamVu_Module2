@@ -1,9 +1,9 @@
-package student_manager1.service.implement;
+package exercise_james.ss10_list.fruit_list.service.implement;
 
-import student_manager1.model.Student;
-import student_manager1.repository.IStudentRepository;
-import student_manager1.repository.implement.StudentRepository;
-import student_manager1.service.IStudentService;
+import exercise_james.ss10_list.student_manager1.model.Student;
+import exercise_james.ss10_list.student_manager1.repository.IStudentRepository;
+import exercise_james.ss10_list.student_manager1.repository.implement.StudentRepository;
+import exercise_james.ss10_list.fruit_list.service.IStudentService;
 
 import java.util.List;
 import java.util.Scanner;

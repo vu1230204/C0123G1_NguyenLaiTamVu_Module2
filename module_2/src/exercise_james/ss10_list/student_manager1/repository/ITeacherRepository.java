@@ -1,6 +1,6 @@
-package student_manager1.repository;
+package exercise_james.ss10_list.student_manager1.repository;
 
-import student_manager1.model.Teacher;
+import exercise_james.ss10_list.student_manager1.model.Teacher;
 
 import java.util.List;
 
